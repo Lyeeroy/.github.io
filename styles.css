@@ -1,4 +1,7 @@
 h2 {
-  font-size: 30px;
-  text-align: center;
+  color: #000000a9;
+    text-align: center;
+    font-family: Brush Script MT;
+    display: flex;
+    justify-content: center;
 }
