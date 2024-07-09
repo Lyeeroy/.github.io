@@ -1,5 +1,5 @@
-const apiKey = "f63971209a53c5f0848a51e899a5ba77"; // Replace with your actual API key
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=${apiKey}`;
+const apiKey = "663fd4369621421eb16214121240907"; 
+const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=London`; 
 
 const outputElement = document.getElementById("output");
 
