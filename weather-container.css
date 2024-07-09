@@ -14,24 +14,45 @@ body {
 .weather-icon {
   width: 150px;
   height: 150px;
-  border-radius: 20px;
+  border-radius: 50px;
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 10px;
-  background: linear-gradient(hsl(222, 55%, 88%), hsl(197, 84%, 45%));
+  background: linear-gradient(hsl(223, 39%, 88%), hsl(197, 84%, 45%));
+  /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);*/
+  align-items: center;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(173, 173, 173, 0.5);
 }
 
 .temperature {
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 5.2vw;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .description {
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 4vw;
   font-size: 20px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .location {
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 20px;
+  position: absolute;
+  bottom: 3vw;
+  cursor: pointer;
 }
