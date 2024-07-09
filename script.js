@@ -1,17 +1,20 @@
-const apiKey = "663fd4369621421eb16214121240907"; 
-const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=London`; 
-
-const outputElement = document.getElementById("output");
+const apiKey = "663fd4369621421eb16214121240907";
+const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=London`;
 
 fetch(apiUrl)
   .then((response) => {
     if (!response.ok) {
-      throw new Error("Network response was not ok");
+      if (response.status === 404) {
+        throw new Error("Data not found");
+      } else if (response.status === 500) {
+        throw new Error("Server error");
+      } else {
+        throw new Error("Network response was not ok");
+      }
     }
     return response.json();
   })
   .then((data) => {
-    // Display data in an HTML element
     outputElement.textContent = JSON.stringify(data, null, 2);
   })
   .catch((error) => {
