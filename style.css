@@ -106,6 +106,18 @@ body {
   border: none;
   border-radius: 4px;
   font-size: 16px;
+  position: relative;
+}
+
+.search-button {
+  background-color: #cecece;
+  color: #696969;
+  padding: 9px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  right: 5.1rem;
 }
 
 .github-icon img {
@@ -114,4 +126,21 @@ body {
 
 .spacer {
   height: 5rem;
+}
+
+.weather-iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 50rem;
+  width: 100%;
+  margin-top: 3rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  /*background-color: rgba(0, 0, 0, 0.055);*/
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
 }

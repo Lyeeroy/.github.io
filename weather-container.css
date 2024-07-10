@@ -49,32 +49,33 @@ body {
 .temperature {
   color: #333;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  position: absolute;
   bottom: auto 7vw;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
-  cursor: pointer;
 }
 
 .description {
   color: #333;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  position: absolute;
   bottom: auto 4.5vw;
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 75px;
-  cursor: pointer;
 }
 
 .location {
   color: #333;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 20px;
-  position: absolute;
-  bottom: auto + 3.5vw;
+  bottom: auto;
   margin-top: 100px;
+}
+
+.description,
+.temperature,
+.location {
+  position: absolute; /* idc lol */
   cursor: pointer;
 }
