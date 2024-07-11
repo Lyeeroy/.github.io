@@ -63,6 +63,7 @@ body {
   filter: invert(100%);
   cursor: pointer;
   width: 5px;
+  margin-left: 1px;
 }
 
 .dropdown-content {
@@ -113,7 +114,7 @@ body {
 .search-button {
   background-color: #cecece;
   color: #696969;
-  padding: 9px 20px;
+  padding: 9px 19px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -129,19 +130,30 @@ body {
   height: 5rem;
 }
 
-.weather-iframe {
+.footer-bar {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 50rem;
-  width: 100%;
-  margin-top: 3rem;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #ffffff;
-  /*background-color: rgba(0, 0, 0, 0.055);*/
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-  border-radius: 20px;
+  bottom: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+.footer-bar p {
+  margin: 0;
+}
+.footer-bar img {
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+.footer-bar a {
+  color: #fff;
 }
