@@ -42,7 +42,7 @@ body {
   align-items: center;
   display: flex;
   position: relative;
-  cursor: pointer;
+  cursor: default;
   border-right: 2px solid rgba(173, 173, 173, 0.5);
 }
 
@@ -77,5 +77,5 @@ body {
 .temperature,
 .location {
   position: absolute; /* idc lol */
-  cursor: pointer;
+  cursor: default;
 }

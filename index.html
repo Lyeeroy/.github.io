@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="weather-container.css" />
     <link rel="stylesheet" href="2-column-layout.css" />
-    <script src="weather-container.js"></script>
-    <script src="location-based-weather.js"></script>
+    <script src="scripts/inputSearch.js"></script>
+    <script src="scripts/weather-container.js"></script>
+    <script src="scripts/location-based-weather.js"></script>
   </head>
   <body>
     <header class="header-bar">
@@ -23,9 +24,10 @@
             class="menu-icon"
           />
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="https://www.weatherapi.com/" target="_blank"
+              >Weather API</a
+            >
+            <a target="_blank" href="https://www.windy.com">Weather widget</a>
           </div>
         </div>
       </div>
@@ -53,19 +55,25 @@
       </div>
     </header>
     <div style="height: 8rem"></div>
-    <div class="two-column-layout">
-      <div class="left-column"></div>
-      <div class="right-column"></div>
+    <div id="ipBasedWeather">
+      <div class="two-column-layout">
+        <div class="left-column"></div>
+        <div
+          class="right-column"
+          title="The weather of this location is based on your IP address."
+        >
+          <img
+            width="20"
+            height="20"
+            style="margin-bottom: 150px; margin-left: 200px; cursor: pointer"
+            src="https://cdn-icons-png.flaticon.com/512/471/471715.png"
+            alt="?"
+          />
+        </div>
+      </div>
     </div>
     <div class="spacer"></div>
-    <div class="content">
-      <!--<div class="weather-container">
-        <div class="weather-icon"></div>
-        <div class="temperature">°C</div>
-        <div class="description">Moderate or heavy rain with thunder</div>
-        <div class="location">London</div>
-      </div>-->
-    </div>
+    <div class="content"></div>
     <div class="spacer"></div>
     <footer class="footer-bar">
       <a target="_blank" href="https://github.com/Lyeeroy">
